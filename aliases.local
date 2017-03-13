@@ -1,0 +1,4 @@
+# aliases
+
+alias be='bundle exec'
+alias t='bundle exec rspec'

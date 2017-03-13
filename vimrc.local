@@ -1,0 +1,13 @@
+let g:mapleader = ','            " sets leader key to comma
+set autoread                     " detect file changes made outside of vim
+set ignorecase                   " case insensitive search
+set smartcase                    " case sensitive search if uppercase is used
+set nofoldenable                 " disable folding
+set hlsearch                     " highlight search results
+set cursorline                   " highlight the cursor line
+set mouse=a                      " enable the mouse in all modes
+set backspace=indent,eol,start   " Backspace deletes like usual
+set colorcolumn=                 " Kill color column with fire
+syntax enable                    " enable syntax highlighting
+map <C-n> :NERDTreeToggle<CR>    " Nerdtree shortcut
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
