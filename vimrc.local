@@ -1,4 +1,4 @@
-let g:mapleader = ','            " sets leader key to comma
+let mapleader=','                " sets leader key to comma
 set autoread                     " detect file changes made outside of vim
 set ignorecase                   " case insensitive search
 set smartcase                    " case sensitive search if uppercase is used

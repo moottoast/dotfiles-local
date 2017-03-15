@@ -32,7 +32,7 @@ fi
 }
 
 # Prompt
-precmd () { PS1="%{%F{4}%}%~%{%F{010}%}$(git_prompt_info) %{%f%}% ☠️  "; }
+precmd () { PS1="%{%F{4}%}%~%{%F{010}%}$(git_prompt_info) %{%f%}% ☠️ "; }
 
 gply () {
   if [ "$1" != "" ] # or better, if [ -n "$1" ]
