@@ -12,12 +12,12 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M
 set-option -g default-command "/bin/bash -c 'which reattach-to-user-namespace >/dev/null && exec reattach-to-user-namespace $SHELL -l || exec $SHELL -l'"
 
 # Setup 'v' to begin selection as in Vim
-bind-key -t vi-copy v begin-selection
-bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+# bind-key -t vi-copy v begin-selection
+# bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Update default binding of `Enter` to also use copy-pipe
-unbind -t vi-copy Enter
-bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
+# unbind -t vi-copy Enter
+# bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Set window notifications
 setw -g monitor-activity on
@@ -69,7 +69,7 @@ set-option -g status-left '#[fg=white]|#S| ☕ #[fg=red] #{battery_percentage}'
 set-option -g status-left-length "100"
 
 # Right status
-set-option -g status-right  $tm_music' #[fg=red]%a %b %d #[fg=white]%l:%M%p'
+set-option -g status-right  '#[fg=red]%a %b %d #[fg=white]%l:%M%p'
 set-option -g status-right-length "100"
 
 # ==============================================================================
