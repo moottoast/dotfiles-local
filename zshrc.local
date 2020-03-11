@@ -5,6 +5,10 @@ HISTFILE=~/.zsh_history
 eval "$(hub alias -s)"
 CASE_SENSITIVE="false"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Setup git branch in prompt
 function git_prompt_info {
 local ref=$(=git symbolic-ref HEAD 2> /dev/null)
